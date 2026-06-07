@@ -53,15 +53,15 @@ if not target_entries:
 print(f"🔥 新着記事を {len(target_entries)} 件検出しました。処理を開始します。")
 
 # ----------------------------------------------------
-# 4. リフレッシュトークンを使ってアクセストークンを自動自動更新
+# 4. リフレッシュトークンを使ってアクセストークンを自動更新
 # ----------------------------------------------------
 print("🔑 アクセストークンを自動更新中...")
 try:
     token_url = "https://oauth2.googleapis.com/token"
     token_data = urllib.parse.urlencode({
-        'client_id': client_id,
-        'client_secret': client_secret,
-        'refresh_token': refresh_token,
+        'client_id': CLIENT_ID,
+        'client_secret': CLIENT_SECRET,
+        'refresh_token': REFRESH_TOKEN,
         'grant_type': 'refresh_token'
     }).encode('utf-8')
     
@@ -86,7 +86,7 @@ for i, entry in enumerate(target_entries, 1):
     print(f"\n--- 🔄 [{i}/{len(target_entries)}] 記事処理中 ---")
     print(f"元タイトル: {title_en}")
     
-    # 💡 Gemini API 呼び出し（503エラー対策のリトライロジック）
+    # Gemini API 呼び出し（503エラー対策のリトライロジック）
     ai_response = None
     prompt = f"以下の海外の最新AIニュース（英語）を読み、日本の開発者向けに分かりやすく日本語で要約してください。Bloggerにそのまま投稿するため、出力は指定された【HTML形式】の本文のみにしてください。\n\n【出力HTML構成案】\n<h2>タイトル（魅力的な日本語翻訳）</h2>\n<p>ニュースの簡単な概要文（1〜2文）</p>\n<h3>主要な注目ポイント</h3>\n<ul>\n  <li>要点1</li>\n  <li>要点2</li>\n  <li>要点3</li>\n</ul>\n<h3>エンジニア目線での考察</h3>\n<p>今後の影響（1〜2文）</p>\n\n【英語記事】\nタイトル: {title_en}\n内容: {summary_en}"
     
