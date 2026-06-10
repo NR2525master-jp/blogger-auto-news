@@ -1,3 +1,8 @@
 https://www.marktechpost.com/2026/06/07/best-21-low-code-and-no-code-ai-tools-in-2026/
 https://www.marktechpost.com/2026/06/07/building-reflective-prompt-optimization-with-gepa-multi-component-prompts-structured-feedback-and-held-out-validation/
 https://www.marktechpost.com/2026/06/08/google-research-adds-agentic-rag-to-gemini-enterprise-agent-platform-with-a-sufficient-context-agent-for-multi-hop-queries/
+https://www.marktechpost.com/2026/06/08/xiaomi-mimo-and-tilert-push-a-1-trillion-parameter-model-past-1000-tokens-per-second-on-commodity-gpus/
+https://www.marktechpost.com/2026/06/08/clawhub-security-signals-a-coding-guide-to-end-to-end-security-signal-analysis-and-verdict-classification-on-the-ai-skills-dataset/
+https://www.marktechpost.com/2026/06/08/a-new-study-from-harvard-and-perplexity-finds-ai-agents-perform-26-minutes-of-autonomous-work-per-session-vs-33-seconds-for-search/
+https://www.marktechpost.com/2026/06/09/nvidia-cutile-python-tutorial-building-tiled-gpu-kernels-for-vector-addition-matrix-addition-and-matrix-multiplication-in-colab/
+https://www.marktechpost.com/2026/06/09/google-releases-gemini-3-5-live-translate-a-streaming-speech-to-speech-audio-model-covering-70-languages-across-meet-translate-and-the-live-api/
